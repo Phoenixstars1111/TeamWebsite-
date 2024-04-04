@@ -147,35 +147,4 @@
   background: #fff;
 }
 
-.moving-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: moveText 5s infinite;
-}
-
-@keyframes moveText {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(-50%, -30%);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-In this code, the .moving-text class is positioned absolutely at the center of the contact page using top, left, and transform properties. The animation property is used to apply the moveText animation, which moves the text up by 20% of its height and then back down over a duration of 5 seconds. The infinite value ensures that the animation repeats indefinitely.
-
-You can adjust the animation duration, keyframes, and other styles as needed to match your desired effect.
-
-Share
-
-
-
-Tell me more.
-Can I customize the animation duration and the movement of the text?
-Is it possible to add more text elements to the moving text section?
-How can I add a background color or image to the moving text section?
 
