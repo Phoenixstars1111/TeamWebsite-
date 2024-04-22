@@ -1,199 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <!--
-    Need a visual blank slate?
-    Remove all code in `styles.css`!
-  -->
-  <link rel="stylesheet" href="style.css" />
-  <script type="module" src="script.js"></script>
- 
+<title> Home  </title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<!--
+Need a visual blank slate?
+Remove all code in `styles.css`!
+-->
+<link rel="stylesheet" href="styles.css" />
+<script type="module" src="script.js"></script>
 <body>
-  <!-- welcome Greeting  -->
-  <h1 style="color:black;"> Welcome to Phoenix Steam Academy website <h1>
-    <nav>
+<h2 style="color:black;"> Welcome to Phoenix Steam Academy website <h2>
+<nav>
 
-<!-- website Navigation & logo-->
-<div class="row">
-  <div class="column">
-    <img src="phlogo.png" alt="Phoenix" width="350" height="350">
-  </div>
+
+<!-- website images and  Navigation-->
+<style>
+  * {
+    box-sizing: border-box;
+  }
   
- <div class="column">
-  <img src=" IMG_1211.JPG" alt=" Team Phoenix" width="387" height="352">
-  <center> 
-    <head> Team Phoenix </head>
-  </center>
-    </div>
-
+  .row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  </style>
+  </head>
+  <body>
+  
+   
+  
+  <div class="row">
     <div class="column">
-      <img src=" Ilabs Academy.png " alt=" Ilabs Academy" width="448" height="350">
+      <img src=" IMG_0164.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src= "IMG_0164.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src=" IMG_0164.jpg" alt="Mountains" style="width:100%">
     </div>
   </div>
   
-  
+  <nav> 
+
       <!-- website Navigation-->
-    <div>
-    <a href="/index.html" aria-current="page">Home </a>
-    <a href="/aboutpage.html"> About </a>
-    <a href="/page3.html"> Event & Impact</a>
-    <a href="/newspage.html"> News </a>
-    <a href="/Contactpage.html"> Contact </a>
-  </nav>
- 
-<!-- -->
-  <main>
+      <div>
+        <a href="/index.html" aria-current="page">Home </a>
+        <a href="/aboutpage.html"> About </a>
+        <a href="/page3.html"> Event & Impact</a>
+        <a href="/newspage.html"> News </a>
+        <a href="/Contactpage.html"> Contact </a>
+      </nav>
+     
+<br>
+<br> 
+<br> 
+<br> 
+<br> 
+
+<div class="container">
+  <div class="text">
     <h4>  Acquire, Apply, Make an Impact</h4>
     <h4> Always rising and surpassing.</h4>
-    <h4> Developing and Training student for life and education skills with 21st century skills</h4>
+    <h4> Preparing students with 21st century abilities for both life and education </h4>
      <br>
-
-     <center> 
-      <!-- explanation of the school adminstion -->
-     <head> School Administrations </head> 
-        <br>
-        <br> 
-        <br>
-   <!-- image display -->
-    <div class="row">
-      <div class="column">
-        <img src="Mr Win.jpeg" alt=" Win" style=" width:" height="490" width="390 ">
-        <br>
-        <head> MR WINFORD BELU JOHN </head>
-        <br>
-        <head> Founder of PiiP Foundation  </head>
-        <br>
-        <head> and iLabs Academy </head>
-        <br>
+    
+  </div>
+  <br> 
+  <br> 
+  <div class="image-gallery">
+      <div class="gallery">
+          <img src=" IMG_0164.jpg" alt="Image 1">
+          <img src=" IMG_0164.jpg" alt="Image 2">
+          <img src=" IMG_0164.jpg" alt="Image 3">
+          <img src=" IMG_0164.jpg" alt="Image 4">
       </div>
+  </div>
+</div>
+</nav>
 
-      <div class="column">
-        <img src=" Alex Perez.png" alt="Alex" style=" width:" height="400" width="350">
-        <br>
-        <head>  Alex Perez </head>
-        <br>
-        <head> A Software Engineer </head>
-        <br>
-        <head> Mentor for Robotics, Website Developing & computer Architecture </head>
-        <br> 
-        <head> live in Wolcott, Connecticut</head>
+<br> 
+<br> 
+<br>  
+<center> 
+</div> 
+<h1> <button class="big-text-button"> Our Nigerian mentors and school administrators</button><h1> 
+</div>
+<br> 
+<div class="scroll-container">
+<div class="scroll-item">
+  <img src="contact 1.png" alt="Image 1">
+  <div class="bottom-right">Bottom Right</div>
+</div>
+<div class="scroll-item">
+  <img src=" contact 1.png" alt="Image 2">
+  <div class="bottom-right">Bottom Right</div>
+</div>
+<div class="scroll-item">
+  <img src=" contact 1.png" alt="Image 3">
+  <div class="bottom-right">Bottom Right</div>
+</div>
+<div class="scroll-item">
+  <img src=" contact 1.png" alt="Image 4">
+  <div class="bottom-right">Bottom Right</div> 
+</div>
+<div class="scroll-item">
+  <img src=" contact 1.png" alt="Image 5">
+  <div class="bottom-right">Bottom Right</div>
+</div>
+<div class="scroll-item">
+  <img src=" contact 1.png" alt="Image 6">
+  <div class="bottom-right">Bottom Right</div>
+</div>
+</div>
+</div>
+
+<div class="button-container">
+<button onclick="scrollImages(-100)"> Silde back </button>
+<button onclick="scrollImages(100)"> Silde up </button>
+<button onclick="scrollImages(100)"> Silde forward </button>
+</div>
+</div> 
+<br> 
+<br> 
+<br> 
+
+ 
+<center> 
+</div> 
+<h1> <button class="big-text-button"> Overview of the webpage</button><h1> 
+</div>
+<p>Welcome to Team Phoenix website where you will experience the creativity of each of our team member out work form our about us you will know more about our team dynamics, from our team Event and impact page you will know more about our team impact and event done so far. Then from our new page you will get the update of what is our team current project this year and the past including our contact page where you can contact us with contact form, email, phone number to give us your feedback about out website.
+</p>
+</div>
+
+<br> 
+<br>
+<center> 
+</div> 
+<h1> <button class="big-text-button"> Home Services</button><h1> 
+</div> 
+<br> 
+
+<div class="container">
+  <div class="left">
+      <div class="image-with-overlay">
+          <img src=" Screenshot 2024-04-19 10.09.40 PM.png" alt="Image">
+          <div class="overlay-text"> Making A Global impact</div>
       </div>
-
-      <div class="column">
-        <img src=" MrComier.jpeg" alt="Comier" style="width:"height="400" width="350">
-        <br>
-        <head> MR. ROBERT COMIER </head>
-        <br>
-        <head> Program Director iLabs USA </head>
-        <br>
-        <head> Professor University of Connecticut</head>
-        <br> 
-        <head> Teacher Wolcott High School </head>
-        <br>
-      <br>
-      </div>
-
-      <div class="column">
-        <img src=" Mr Chris.jpeg" alt="Chris" style=" height="400" width="350">
-        <br>
-        <head> CHRIS BARLOW </head>
-        <br>
-        <head> Chief Technology Officer </head>
-        <br>
-        <head> US Bank (Credit Union)</head>
-        <br> 
-        <head> Board Member, iLabs USA</head>
-      </div>
-
-    <div class="column">
-      <img src=" Adams Glasser.jpeg" alt="ADAM" style=" height="400" width="350">
-      <br>
-      <head> ADAM GLASSER</head>
-      <br>
-      <head> Chief Engineer </head>
-      <br>
-      <head> Lockheed Martin-Sikorsky, USA</head>
-    </div>
-
-    <div class="column">
-      <img src=" Oluwatoyin Awoderu.jpeg" alt=" Awoderu " style="width:"height="400" width="350">
-      <br>
-      <head> OLUWATOYIN TOYIN AWODERU </head>
-      <br>
-      <head> Director center for Africana </head>
-      <br>
-      <head> studies CCSU, USA </head>
-    </div>
   </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  
-    <body>  
-      <!-- About page image  -->
-      <div class="container">
-        <div class="image">
-          <img src=" IMG_1138.JPG" height="433" width="541">
-        </div>
-
-        <div class="side">
-          <center> <p> Investigating changes in the educational and life systems of schools, teachers, and students in the twenty-first century. know more </center>
-          <br>
-            <a href="/aboutPage.html" aria-current="page"> About Us</a> <p3>.
-          </div>
-          </div>
-    <br>
-    <br>
-       <!-- website Explanation -->
-     <head> Brief Explanation On Our Website <head>
-     <p> </p>
-     <br>
-     <br>
-
-     <!-- classroom performing project -->
-    <head> Classroom included in ILabs Academy year Project mission.<head>
-      </center>
+  <div class="right">
+      <div class="text">
+         <h1><p> Examining the dynamics of Team Phoenix, the best squad, and their amazing website page
+           <br>
+          <a href="/aboutPage.html" aria-current="page">About Us</a> <p><h1>
       
-      <div class="flip-box">
-        <div class="flip-box-inner">
-          <div class="flip-box-front">
-            <img src="Grade 8.JPGalt" alt=" Grade 8" style="width:300px;height:200px">
-          </div>
-          <div class="flip-box-back">
-            <h2>Paris</h2>
-            <p>What an amazing city</p>
-          </div>
+      </div>
+  </div>
+</div>
+<br> 
+<br> 
 
-       <br>
-        <br>
-        <br>
+<div class="container">
+  <div class="left">
+      <div class="image-with-overlay">
+          <img src="contact 1.png" alt="Image">
+          <div class="overlay-text"> Let us help you</div>
+      </div>
+  </div>
+  <div class="right">
+      <div class="text">
+      
+        <h1><p> Our dedicated contact page is where you can use our email address, phone number, and contact form to share your thoughts with us about our team website.
+            <br>
+          <a href="/aboutPage.html" aria-current="page"> Contact Us </a> <p><h1>
+          <p><h2>
+      </div>
+  </div>
+</div>
 
-      <!-- duty of student -->
-      <br>
-      <center>
-       <head> Characteristics of our school students <head>
-        <br>
-        <br> 
-       </center>
-       <img src=" " height="400" width=" 300">
-        <p> </p>
-      <br>
-      <br> 
- 
-      <center>
-      <!-- Website brief Advice-->
-      <p> If you want to know more about our website and what we are doing please take your time to review our website content and please give us your feedback about the website in our  <a href="/page5.html" aria-current="page"> Contact Page </a>. Regarding how you feel about our website Thank you. <p>
-      <br>
-          <!-- website page conclusion -->
-       <p> Freedom Iheanacho, David Negene, Success Ndubueze </p>
-      <p> @copyright@ 2024 Phoenix Steam Olympic powered by PiiP Foundation.</p>
-    </center>
-    </main>
+<br> 
+<br> 
+
+</div> 
+<h1> <button class="big-text-button"> Classroom included in ILabs Academy year Project mission.</button><h1> 
+</div> 
+</div>
+<br> 
+
+<div class="container">
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src=" IMG_0164.jpg" alt="Image 1">
+          <div class="text-box">Grade 1
+            <br> 
+            <p>  This is the first junior team and class at our school, and they are both participating in this year's project. </p>
+          </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src=" IMG_0164.jpg" alt="Image 2">
+          <div class="text-box">Grade 5
+            <br> 
+            <p> The junior student in our school's senior class is also involved in this year's project as a team </p>
+          </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src=" IMG_0164.jpg" alt="Image 3">
+          <div class="text-box"> Grade 7
+            <br> 
+            <p>  These junior high school students, who are in grade 7, have formed groups with their various teammates to collaborate on this year's project.</p>
+          </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src="  IMG_0164.jpg" alt="Image 4">
+          <div class="text-box"> Grade 8
+            <br> 
+            <p> This student in grade 8, is a senior in our secondary school. They are also grouped with other junior students to work on a team project this year.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<p> We would be happy to welcome new members to our school's  system and this year's program. These are some of the classes we provide and the students that have attended.</p> 
+
+<br> 
+
+</div> 
+<h1> <button class="big-text-button"> Student's qualifications for our school</button><h1> 
+</div> 
+</div>
+<div class="container">
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src="team1.jpeg" alt="Image 1">
+          <div class="text-box"> Ownership of Learning
+            <br> 
+           <p>The desire to know or explore more </p>
+          </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src=" team1.jpeg" alt="Image 2"width="350" height="250">
+          <div class="text-box"> Team work
+            <br> 
+         <p>  The Abilities to work as a team, have one mind and accomplish work better and faster.</p>
+        </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src=" ty.png" alt="Image 3"width="350" height="250">
+          <div class="text-box">21st Century Skill
+            <br> 
+            <p> Student should have 2lst century skill to solve their problem </p>
+          </div>
+      </div>
+  </div>
+</div>
+<br> 
+<br> 
+</div>
+<div class="container">
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src="  team1.jpeg" alt="Image 1">
+          <div class="text-box">  Problem Based Learning 
+            <br> 
+           <p>Student learn and have problem based learning skills to solve problem and impact in the life of others </p>
+          </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src=" team1.jpeg" alt="Image 2"width="350" height="250">
+          <div class="text-box"> Project Mission Accomplishment
+         <p>   student make sure project that was giving to them will be accomplish with great result and the will also get ready for the next project. </p>
+        </div>
+      </div>
+  </div>
+  <div class="image-container">
+      <div class="image-with-text">
+          <img src="young.jpeg" alt="Image 3"width="350" height="250">
+          <div class="text-box"> Community Impact
+            <br> 
+            <p> Student much have the abilities to make an impact both in the school and in our community leading to the development of our community and the student Legacy </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+
+    <!-- website page conclusion -->
+    <p> Freedom Iheanacho, David Negene, Success Ndubueze </p>
+    <p> @copyright@ 2024 Phoenix Steam Olympic powered by PiiP Foundation.</p>
+  </center>
+  </main>
 </body>
 </html>
