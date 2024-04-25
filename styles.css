@@ -312,7 +312,6 @@ body {
   font-size: 18px;
   margin: 10px 0 0;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -449,3 +448,4 @@ h1 {
   height: auto;
   border-radius: 10px;
 }
+
