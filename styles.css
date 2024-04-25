@@ -50,30 +50,6 @@ body {
   padding: 0;
 }
 
-.container {
-  display: flex;
-}
-
-.text {
-  flex: 1;
-  padding: 20px;
-}
-
-.image-gallery {
-  flex: 1;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.gallery {
-  display: flex;
-}
-
-.gallery img {
-  width: 200px; /* Adjust width as needed */
-  height: auto;
-  margin-right: 10px; /* Adjust spacing between images */
-}
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
