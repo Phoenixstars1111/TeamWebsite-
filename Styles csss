@@ -79,21 +79,3 @@ h1 {
   border-radius: 10px;
 }
 
-.overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color:  transparent
-
-
- 
-
- 
-
-
- 
- 
-
- 
- 
