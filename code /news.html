@@ -1,0 +1,550 @@
+<style> 
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      color: black;
+      background-color: white;
+    }
+    
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+      gap: 0.5rem;
+      border-bottom: solid 1px #aaa;
+      background-color: #eee;
+    }
+    
+    nav a {
+      display: inline-block;
+      min-width: 9rem;
+      padding: 0.5rem;
+      border-radius: 0.2rem;
+      border: solid 1px #aaa;
+      text-align: center;
+      text-decoration: none;
+      color: #555;
+    }
+    
+    nav a[aria-current='page'] {
+      color: #000;
+      background-color: #d4d4d4;
+    }
+    
+    main {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+    
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .image-item {
+      width: calc(33.33% - 20px); /* Adjust the width accordingly */
+      margin: 10px;
+    }
+    
+    .caption {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .image-shake {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .shaking-image {
+      position: relative;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+      animation-iteration-count: infinite;
+    }
+    
+    .shaking-image.left {
+      animation-name: shake-left;
+    }
+    
+    .shaking-image.right {
+      animation-name: shake-right;
+    }
+    
+    @keyframes shake-left {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+    
+    @keyframes shake-right {
+      0% {
+        transform: translateX(5px);
+      }
+      50% {
+        transform: translateX(-5px);
+      }
+      100% {
+        transform: translateX(5px);
+      }
+    }
+    video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust the height as needed */
+    }
+    
+    .container {
+      display: flex;
+    }
+    
+    .left-column {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .left-column img {
+      max-width: 100%;
+    }
+    
+    .right-column {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .right-column video {
+      max-width: 100%;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .row {
+      display: flex;
+      width: 100%;
+    }
+    
+    .column {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .column img {
+      max-width: 100%;
+    }
+    .image-container {
+      display: flex;
+    }
+    
+    .image-box {
+      position: relative;
+      flex: 1;
+      margin: 10px;
+    }
+    
+    .image-box img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .text-overlay h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .image-container {
+      display: flex;
+    }
+    
+    .image-box {
+      flex: 1;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .image-box img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .text-box {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: #fff;
+      margin-top: 10px;
+    }
+    
+    .text-box h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+    
+    .text-box p {
+      font-size: 14px;
+      margin: 0;
+    }
+    
+    
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title> News  </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+    Need a visual blank slate?
+    Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <body>
+    <h2 style="color:black;"> Welcome to Phoenix Steam Academy website <h2>
+    <nav>
+    
+    
+    <!-- website images and  Navigation-->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .row {
+        display: flex;
+      }
+      
+      /* Create three equal columns that sits next to each other */
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <div class="row">
+        <div class="column">
+          <img src=" team.png" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src= " team.png" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src=" team.png " alt="Mountains" style="width:100%">
+        </div>
+      </div>
+      
+      <nav> 
+      
+        <a href="home.html">Home</a>
+        <a href="about.html"> About</a>
+        <a href="event&impact.html"> Event & Impact</a>
+        <a href="news.html"> News </a>
+        <a href="contact.html"> Contact Us </a>
+        
+        </nav>
+       <center>
+          <!-- MAIN (Center website) -->
+    <div class="main">
+      <h1> Current Exhibitation</h1>
+        <br>
+        <div class="image-container">
+          <div class="image-box">
+            <img src=" no water.png" alt="Image 1">
+            <div class="text-box">
+              <h2>Image 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src=" no water.png" alt="Image 2">
+            <div class="text-box">
+              <h2>Image 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src=" no water.png" alt="Image 3">
+            <div class="text-box">
+              <h2>Image 3</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+         <br> 
+         <br>
+       <center>
+         <br>
+         <br>
+         <br>
+    
+    
+    
+    
+       <!-- MAIN (Center website) -->
+    <div class="main">
+    
+    
+     <h1> Upcoming Teams Project Program </h1>
+     <hr>
+    
+     <center>
+        <p>This project will be scheduled to be presented and due on March 2, 2024, and it will be showcased on the team's website.</p>
+     
+     </center>
+     <nav> 
+       <br>  <div class="image-container">
+        <div class="image-box">
+          <img src=" team.png" alt="Image 1">
+          <div class="text-box">
+            <h3> May 2 2024 </H3>
+              <h4> Ecosystem Terrarium </h4>
+              <p> We constructed this little greenhouse to learn about plant life cycles and ecosystems, which we will present to the public on our Olympic Day.</p>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src=" team.png" alt="Image 2">
+          <div class="text-box">
+            <h3> May 2 2024 </H3>
+              <h3> Superpower (15) mission </h3>
+              <p> Team  will code Their robot to completing the (15) fifteen superpowered mission which will be our upcoming program.</p>
+          </div>
+        </div>
+      </div>
+    
+      <br> 
+      <br> 
+      <div class="image-container">
+        <div class="image-box">
+          <img src=" team.png" alt="Image 1">
+          <div class="text-box">
+            <h2>Image 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src=" team.png" alt="Image 2">
+          <div class="text-box">
+            <h2>Image 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    
+    
+      <!-- END MAIN -->
+     </div>
+     <br>
+     <br>
+     <center>
+        <img src=" Oluwatoyin Awoderu.jpeg" width=" 1100" height=" 700">
+          <!-- MAIN (Center website) -->
+    <div class="main">
+    
+    
+     <h1> Past Team Project Program  </h1>
+     <hr>
+    
+    
+     <center>
+     <p> This was our last program for the Steam Olympics. We worked with Team Everest and other educational institutions on this program, but they were working on other projects that would be shown and due on March 11, 2023. Our projects included an innovation project (addressing the issue of not enough water) and a robotic project (using an EV3 robot to position a cube in its target). </p>
+    
+    
+     <br>
+     <br>
+      
+     <div class="image-container">
+       <div class="image-box">
+         <img src=" no water.png" alt="Image 1">
+         <div class="text-box">
+           <h2>Image 1</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>
+       </div>
+       <div class="image-box">
+         <img src=" no water.png" alt="Image 2">
+         <div class="text-box">
+           <h2>Image 2</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>
+       </div>
+       <div class="image-box">
+         <img src=" no water.png" alt="Image 3">
+         <div class="text-box">
+           <h2>Image 3</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         </div>
+       </div>
+     </div>
+      <br> 
+      <br>
+     
+      <br>
+      <br>
+      <div class="image-container">
+        <div class="image-box">
+          <img src=" no water.png" alt="Image 1">
+          <div class="text-box">
+            <h2>Image 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src=" no water.png" alt="Image 2">
+          <div class="text-box">
+            <h2>Image 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="image-box">
+          <img src=" no water.png" alt="Image 3">
+          <div class="text-box">
+            <h2>Image 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+       <br> 
+    
+       <br>
+       <br>
+       <div class="image-container">
+         <div class="image-box">
+           <img src=" no water.png" alt="Image 1">
+           <div class="text-box">
+             <h2>Image 1</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+         </div>
+         <div class="image-box">
+           <img src=" no water.png" alt="Image 2">
+           <div class="text-box">
+             <h2>Image 2</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+         </div>
+         <div class="image-box">
+           <img src=" no water.png" alt="Image 3">
+           <div class="text-box">
+             <h2>Image 3</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+         </div>
+       </div>
+        <br> 
+        <br>
+        <br>
+        <div class="image-container">
+          <div class="image-box">
+            <img src=" no water.png" alt="Image 1">
+            <div class="text-box">
+              <h2>Image 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src=" no water.png" alt="Image 2">
+            <div class="text-box">
+              <h2>Image 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src=" no water.png" alt="Image 3">
+            <div class="text-box">
+              <h2>Image 3</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+         <br> 
+         <br>
+      <center>
+       <h5>The Team Everest were solving the problem of not enough water by building up tools that can stop the waste of water and generate more ways to bring water to people in the environment there too. </h5> </center>
+     </div>
+    </div>
+    <!-- website page conclusion -->
+    <br>
+    <br>
+    <p> Freedom Iheanacho, David Negene, Success Ndubueze </p>
+    <p> @copyright@ 2024 Phoenix Steam Olympic powered by PiiP Foundation.</p>
+    <nav>
+    
+    
